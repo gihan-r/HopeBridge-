@@ -12,6 +12,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "HopeBridge Marketing Website/my-next-app"
     steps:
       - uses: actions/checkout@v4
       
@@ -22,14 +25,10 @@ jobs:
           cache: 'npm'
           
       - name: Install dependencies
-        run: |
-          cd "HopeBridge Marketing Website/my-next-app"
-          npm install
+        run: npm ci
           
       - name: Build
-        run: |
-          cd "HopeBridge Marketing Website/my-next-app"
-          npm run build
+        run: npm run build
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
