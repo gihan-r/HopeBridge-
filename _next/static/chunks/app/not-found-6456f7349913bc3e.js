@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[345],{1200:(e,u,s)=>{"use strict";s.r(u),s.d(u,{default:()=>n});var r=s(2115),t=s(8999);function n(){let e=(0,t.useRouter)();return(0,r.useEffect)(()=>{e.push("/HopeBridge-/")},[e]),null}},9418:(e,u,s)=>{Promise.resolve().then(s.bind(s,1200))}},e=>{var u=u=>e(e.s=u);e.O(0,[441,684,358],()=>u(9418)),_N_E=e.O()}]);
