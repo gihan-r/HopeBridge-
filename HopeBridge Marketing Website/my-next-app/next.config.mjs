@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/HopeBridge-',
+  assetPrefix: '/HopeBridge-/',
 };
 
 export default nextConfig;
