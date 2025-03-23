@@ -13,7 +13,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -21,25 +22,24 @@ jobs:
           node-version: '18'
           cache: 'npm'
           cache-dependency-path: "HopeBridge Marketing Website/my-next-app/package-lock.json"
-          
+
       - name: Install dependencies
         run: |
           cd "HopeBridge Marketing Website/my-next-app"
           rm -f yarn.lock
           npm install
-          
-      - name: Build
+
+      - name: Build and Export Next.js site
         run: |
           cd "HopeBridge Marketing Website/my-next-app"
           npm run build
-          
+          npm run export
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "HopeBridge Marketing Website/my-next-app/out"
+
       - name: Deploy to GitHub Pages
-        run: |
-          cd "HopeBridge Marketing Website/my-next-app"
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add out
-          git commit -m "Deploy to GitHub Pages"
-          git push origin HEAD:gh-pages --force
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        id: deployment
+        uses: actions/deploy-pages@v4
