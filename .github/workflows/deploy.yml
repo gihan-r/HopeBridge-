@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: "HopeBridge Marketing Website/my-next-app/package-lock.json"
+
+      - name: Install dependencies
+        run: |
+          cd "HopeBridge Marketing Website/my-next-app"
+          npm install
+
+      - name: Build Next.js site
+        run: |
+          cd "HopeBridge Marketing Website/my-next-app"
+          npm run build
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "HopeBridge Marketing Website/my-next-app/out"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
