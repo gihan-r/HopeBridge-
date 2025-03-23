@@ -34,12 +34,12 @@ jobs:
           npm run build
           
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: "HopeBridge Marketing Website/my-next-app/out"
-          force_orphan: true
-          commit_message: "Deploy to GitHub Pages"
-          full_commit_message: "Deploy to GitHub Pages - ${{ github.event.head_commit.message }}"
-          enable_jekyll: false
-          exclude_assets: ".git" 
+        run: |
+          cd "HopeBridge Marketing Website/my-next-app"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add out
+          git commit -m "Deploy to GitHub Pages"
+          git push origin HEAD:gh-pages --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
