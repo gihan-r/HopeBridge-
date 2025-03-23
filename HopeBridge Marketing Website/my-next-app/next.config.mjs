@@ -2,21 +2,17 @@
 const nextConfig = {
     output: 'export',
     images: {
-      unoptimized: true,
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: '**',
-        },
-      ],
+      unoptimized: true, // Disable optimization for external images
+      loader: 'imgix', // Ensures external images are correctly loaded (if applicable)
+      domains: ['example.com'], // Optional: specify domains if using external images
     },
-    basePath: '/HopeBridge-', // Make sure this matches your GitHub Pages URL path
-    assetPrefix: '/HopeBridge-/', // Same here
+    basePath: '/HopeBridge-', // Ensure it matches the subpath of your GitHub Pages URL
+    assetPrefix: '/HopeBridge-/', // Ensure it matches the subpath of your GitHub Pages URL
     trailingSlash: true,
     webpack(config) {
       config.module.rules.push({
-        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-        type: 'asset/resource',
+        test: /\.(png|jpg|jpeg|gif|svg|eot|ttf|woff|woff2)$/,
+        type: 'asset/resource', // Ensure image and font assets are handled
       });
       return config;
     },
