@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -29,11 +29,10 @@ jobs:
           rm -f yarn.lock
           npm install
 
-      - name: Build and Export Next.js site
+      - name: Build Next.js site
         run: |
           cd "HopeBridge Marketing Website/my-next-app"
           npm run build
-          npm run export
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
