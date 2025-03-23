@@ -10,10 +10,10 @@ const nextConfig = {
         },
       ],
     },
-    basePath: '/HopeBridge-',
-    assetPrefix: '/HopeBridge-/',
+    basePath: '/HopeBridge-', // Make sure this matches your GitHub Pages URL path
+    assetPrefix: '/HopeBridge-/', // Same here
     trailingSlash: true,
-    webpack: (config) => {
+    webpack(config) {
       config.module.rules.push({
         test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
         type: 'asset/resource',
@@ -23,3 +23,4 @@ const nextConfig = {
   };
   
   export default nextConfig;
+  
