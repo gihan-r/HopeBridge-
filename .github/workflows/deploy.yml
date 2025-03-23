@@ -34,8 +34,8 @@ jobs:
           npm run build
           
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: "HopeBridge Marketing Website/my-next-app/out"
-          force_orphan: true 
+          folder: "HopeBridge Marketing Website/my-next-app/out"
+          branch: gh-pages
+          clean: true 
