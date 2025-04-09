@@ -49,10 +49,6 @@ jobs:
         run: npx next build
         working-directory: my-next-app
 
-      - name: Export static files
-        run: npx next export
-        working-directory: my-next-app
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
