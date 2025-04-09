@@ -46,11 +46,11 @@ jobs:
         working-directory: my-next-app
 
       - name: Build with Next.js
-        run: npx next build
+        run: next build
         working-directory: my-next-app
 
       - name: Export static files
-        run: npx next export
+        run: next export
         working-directory: my-next-app
 
       - name: Upload artifact
@@ -69,4 +69,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
