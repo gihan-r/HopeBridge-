@@ -46,11 +46,11 @@ jobs:
         working-directory: my-next-app
 
       - name: Build with Next.js
-        run: next build
+        run: npm next build
         working-directory: my-next-app
 
       - name: Export static files
-        run: next export
+        run: npm next export
         working-directory: my-next-app
 
       - name: Upload artifact
