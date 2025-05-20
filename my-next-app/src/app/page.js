@@ -134,7 +134,7 @@ export default function Page() {
                 <div className="max-h-[calc(100vh-8rem)] overflow-y-auto p-4">
                   <div className="space-y-6 text-gray-300">
                     <div className="relative rounded-lg border border-gray-800 bg-black/50 p-4 transition duration-300 hover:border-gray-700 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/20 group">
-                      <div className="absolute inset-0 rounded-lg bg-[url('/images/bgPic/mission.jpg')] bg-cover bg-center opacity-20 transition-opacity group-hover:opacity-30" />
+                      <div className="absolute inset-0 rounded-lg bg-[url('/HopeBridge-/images/bgPic/mission.jpg')] bg-cover bg-center opacity-20 transition-opacity group-hover:opacity-30" />
                       <div className="relative">
                         <div className="mb-3 flex items-center gap-2">
                           <div className="rounded-full bg-pink-500/20 p-1.5">
@@ -149,7 +149,7 @@ export default function Page() {
                     </div>
 
                     <div className="relative rounded-lg border border-gray-800 bg-black/50 p-4 transition duration-300 hover:border-gray-700 hover:scale-[1.02] hover:shadow-lg hover:shadow-green-500/20 group">
-                      <div className="absolute inset-0 rounded-lg bg-[url('/images/bgPic/services.jpg')] bg-cover bg-center opacity-20 transition-opacity group-hover:opacity-30" />
+                      <div className="absolute inset-0 rounded-lg bg-[url('/HopeBridge-/images/bgPic/services.jpg')] bg-cover bg-center opacity-20 transition-opacity group-hover:opacity-30" />
                       <div className="relative">
                         <div className="mb-3 flex items-center gap-2">
                           <div className="rounded-full bg-green-500/20 p-1.5">
@@ -183,7 +183,7 @@ export default function Page() {
                     </div>
 
                     <div className="relative rounded-lg border border-gray-800 bg-black/50 p-4 transition duration-300 hover:border-gray-700 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/20 group">
-                      <div className="absolute inset-0 rounded-lg bg-[url('/images/bgPic/how-it-works.jpg')] bg-cover bg-center opacity-20 transition-opacity group-hover:opacity-30" />
+                      <div className="absolute inset-0 rounded-lg bg-[url('/HopeBridge-/images/bgPic/how-it-works.jpg')] bg-cover bg-center opacity-20 transition-opacity group-hover:opacity-30" />
                       <div className="relative">
                         <div className="mb-3 flex items-center gap-2">
                           <div className="rounded-full bg-blue-500/20 p-1.5">
@@ -217,7 +217,7 @@ export default function Page() {
                     </div>
 
                     <div className="relative rounded-lg border border-gray-800 bg-black/50 p-4 transition duration-300 hover:border-gray-700 hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/20 group">
-                      <div className="absolute inset-0 rounded-lg bg-[url('/images/bgPic/community.jpg')] bg-cover bg-center opacity-20 transition-opacity group-hover:opacity-30" />
+                      <div className="absolute inset-0 rounded-lg bg-[url('/HopeBridge-/images/bgPic/community.jpg')] bg-cover bg-center opacity-20 transition-opacity group-hover:opacity-30" />
                       <div className="relative">
                         <div className="mb-3 flex items-center gap-2">
                           <div className="rounded-full bg-purple-500/20 p-1.5">
@@ -288,7 +288,7 @@ export default function Page() {
                   <div className="relative">
                     <div className="mb-4 aspect-square w-32 overflow-hidden rounded-full mx-auto ring-2 ring-white/10 transition-all duration-300 group-hover:ring-white/20">
                       <img
-                        src="/images/team/chanithu.jpg"
+                        src="/HopeBridge-/images/team/chanithu.JPG"
                         alt="Chanithu"
                         className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       />
@@ -312,7 +312,7 @@ export default function Page() {
                   <div className="relative">
                     <div className="mb-4 aspect-square w-32 overflow-hidden rounded-full mx-auto ring-2 ring-white/10 transition-all duration-300 group-hover:ring-white/20">
                       <img
-                        src="/images/team/thisul.jpg"
+                        src="/HopeBridge-/images/team/thisul.JPG"
                         alt="Thisul"
                         className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       />
@@ -336,7 +336,7 @@ export default function Page() {
                   <div className="relative">
                     <div className="mb-4 aspect-square w-32 overflow-hidden rounded-full mx-auto ring-2 ring-white/10 transition-all duration-300 group-hover:ring-white/20">
                       <img
-                        src="/images/team/gihan.jpg"
+                        src="/HopeBridge-/images/team/gihan.JPG"
                         alt="Gihan"
                         className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       />
@@ -360,7 +360,7 @@ export default function Page() {
                   <div className="relative">
                     <div className="mb-4 aspect-square w-32 overflow-hidden rounded-full mx-auto ring-2 ring-white/10 transition-all duration-300 group-hover:ring-white/20">
                       <img
-                        src="/images/team/jayodya.jpg"
+                        src="/HopeBridge-/images/team/jayodya.JPG"
                         alt="Jayodya"
                         className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       />
@@ -384,7 +384,7 @@ export default function Page() {
                   <div className="relative">
                     <div className="mb-4 aspect-square w-32 overflow-hidden rounded-full mx-auto ring-2 ring-white/10 transition-all duration-300 group-hover:ring-white/20">
                       <img
-                        src="/images/team/pasindu.jpg"
+                        src="/HopeBridge-/images/team/pasindu.JPG"
                         alt="Pasindu"
                         className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       />
@@ -408,7 +408,7 @@ export default function Page() {
                   <div className="relative">
                     <div className="mb-4 aspect-square w-32 overflow-hidden rounded-full mx-auto ring-2 ring-white/10 transition-all duration-300 group-hover:ring-white/20">
                       <img
-                        src="/images/team/naveen.jpg"
+                        src="/HopeBridge-/images/team/naveen.JPG"
                         alt="Naveen"
                         className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       />

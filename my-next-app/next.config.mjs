@@ -12,6 +12,7 @@ const nextConfig = {
   },
   basePath: '/HopeBridge-',
   assetPrefix: '/HopeBridge-',
+  trailingSlash: true,
 };
 
 export default nextConfig;
