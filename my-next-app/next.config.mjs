@@ -3,8 +3,15 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
-  basePath: '/HopeBridge-', 
+  basePath: '/HopeBridge-',
+  assetPrefix: '/HopeBridge-',
 };
 
 export default nextConfig;
